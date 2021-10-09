@@ -18,7 +18,7 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
                                 |
                                 |<p><b>Links:</b> <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World!</a>""".stripMargin, 
       sourceAudioFileName  = "HelloScratchfluidity.mp3",    // String
-      publicationDate      = "2021-10-05",       // String, Format: YYYY-MM-DD
+      publicationDate      = "2021-10-08",       // String, Format: YYYY-MM-DD
       mbSubtitle           = Some("It's pretty underwhelming!")  
     )
 
@@ -31,10 +31,15 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
       description         = """|<p>This is a test podcast, used to help develop <i>audiofluidity</i>.</p>
                                |
                                |<p>I hope you like it.""".stripMargin, 
-      guidPrefix          = "com.mchange.test-audiofluidity-",
+      guidPrefix          = "com.mchange.scratchfluidity-",
       shortOpaqueName     = "scratchfluidity",  
-      mainImageFileName   = "interfluidity-wave.jpg", 
+      mainImageFileName   = "scratchfluidity-on-chalkwave.jpg", 
       editorEmail         = "swaldman@mchange.com", 
-      defaultAuthorEmail  = "swaldman@mchange.com", 
+      defaultAuthorEmail  = "swaldman@mchange.com",
+      itunesCategories    = immutable.Seq( ItunesCategory.Society_Culture_Personal_Journals ),
+      mbAdmin             = Some(Admin(name="Steve Waldman", email="swaldman@mchange.com")),
+      mbCopyrightHolder   = Some("Machinery For Change, LLC"),
+      mbLanguage          = Some(LanguageCode.EnglishUnitedStates),  //Option[LanguageCode], not mandatory as RSS, but strongly recommended by Apple Podcast
+      mbPublisher         = Some("Machinery For Change, LLC"),       //Option[String] not mandatory as RSS, but required for Apple Podcast support
       episodes            = episodes
     )

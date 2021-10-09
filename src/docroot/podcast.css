@@ -29,3 +29,7 @@ span.pubdate {
     display: none;
 }
 
+.coverimage img {
+    width:  700;
+    height: 700;
+}
