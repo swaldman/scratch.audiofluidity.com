@@ -1,6 +1,8 @@
 body {
-  background-image: url("image/notebook.gif");
+  /* background-image: url("image/notebook.gif"); */
+  background-image: url("image/double-bubble-dark/double-bubble-dark.png");
   font-family: monospace;
+  color: #ccccff;
 }
 
 body.podcast {
@@ -15,11 +17,12 @@ div.contacts {
 hr.podcast {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    /* background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
 
 hr.episode {
-  border: 1px solid black;
+  border: 1px solid #626262;
 }
 
 span.pubdate {
@@ -29,7 +32,23 @@ span.pubdate {
     display: none;
 }
 
+h1.maintitle.podcast {
+    display: none;
+}
+
+h1.maintitle.episode {
+    color: white;
+}
+
 .coverimage img {
     width:  700;
     height: 700;
+}
+
+a, a:visited {
+    color: cyan;
+}
+
+ul.episodelist {
+    list-style-type: none;
 }
