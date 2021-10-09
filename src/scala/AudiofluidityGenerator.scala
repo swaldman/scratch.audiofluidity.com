@@ -43,3 +43,5 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
       mbPublisher         = Some("Machinery For Change, LLC"),       //Option[String] not mandatory as RSS, but required for Apple Podcast support
       episodes            = episodes
     )
+
+  val deployer = new Deployer.Exec(preparsedCommand = immutable.Seq("rsync", "-av", ".", "swaldman@tickle.mchange.com:/home/web/public/audiofluidity-scratch"))
