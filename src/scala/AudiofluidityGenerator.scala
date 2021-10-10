@@ -14,7 +14,7 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
     Episode(
       uid                  = "1",  
       title                = "Kind of spooky MIDI music, and a first attempt.",
-      description          = """|<p>Nothing to write home about, but I guess it's audio!.</p>
+      description          = """|<p>Nothing to write home about, but I guess it's audio!</p>
                                 |
                                 |<p><b>Links:</b> <a href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">Hello World!</a>""".stripMargin, 
       sourceAudioFileName  = "HelloScratchfluidity.mp3",    // String
