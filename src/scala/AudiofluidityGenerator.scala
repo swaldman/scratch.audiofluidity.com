@@ -28,16 +28,20 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
     Podcast(
       mainUrl                = "https://scratch.audiofluidity.com/",
       title                  = "Scratchfluidity",  
-      description            = """|<p>This is a test podcast, used to help develop <i>audiofluidity</i>.</p>
+      description            = """|<p><b style="color: white;">Ceci n'est pas un podcast.</b></p>
                                   |
-                                  |<p>I hope you like it.""".stripMargin, 
+                                  |<p>Ok, it's kind of a podcast. It's a test podcast, used to help develop <i>audiofluidity</i>.</p>
+                                  |
+                                  |<p>I hope you like it.</p>
+                                  |
+                                  |<p style="font-size: smaller;"><i>Background courtesy of <a href="https://www.toptal.com/designers/subtlepatterns/double-bubble-dark-pattern/">Toptal</a>.</i></p>""".stripMargin, 
       guidPrefix             = "com.mchange.scratchfluidity-",
       shortOpaqueName        = "scratchfluidity",  
       mainCoverImageFileName = "scratchfluidity-on-chalkwave.jpg", 
       editorEmail            = "swaldman@mchange.com", 
       defaultAuthorEmail     = "swaldman@mchange.com",
       itunesCategories       = immutable.Seq( ItunesCategory.Society_Culture_Personal_Journals ),
-      mbAdmin                = Some(Admin(name="Steve Waldman", email="swaldman@mchange.com")),
+      mbAdmin                = Some(Admin(name="Steve Randy Waldman", email="swaldman@mchange.com")),
       mbCopyrightHolder      = Some("Machinery For Change, LLC"),
       mbLanguage             = Some(LanguageCode.EnglishUnitedStates),
       mbPublisher            = Some("Machinery For Change, LLC"),
