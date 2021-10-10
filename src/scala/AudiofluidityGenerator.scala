@@ -26,22 +26,22 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
 
   val podcast : Podcast =
     Podcast(
-      mainUrl             = "https://scratch.audiofluidity.com/",
-      title               = "Scratchfluidity",  
-      description         = """|<p>This is a test podcast, used to help develop <i>audiofluidity</i>.</p>
-                               |
-                               |<p>I hope you like it.""".stripMargin, 
-      guidPrefix          = "com.mchange.scratchfluidity-",
-      shortOpaqueName     = "scratchfluidity",  
-      mainImageFileName   = "scratchfluidity-on-chalkwave.jpg", 
-      editorEmail         = "swaldman@mchange.com", 
-      defaultAuthorEmail  = "swaldman@mchange.com",
-      itunesCategories    = immutable.Seq( ItunesCategory.Society_Culture_Personal_Journals ),
-      mbAdmin             = Some(Admin(name="Steve Waldman", email="swaldman@mchange.com")),
-      mbCopyrightHolder   = Some("Machinery For Change, LLC"),
-      mbLanguage          = Some(LanguageCode.EnglishUnitedStates),  //Option[LanguageCode], not mandatory as RSS, but strongly recommended by Apple Podcast
-      mbPublisher         = Some("Machinery For Change, LLC"),       //Option[String] not mandatory as RSS, but required for Apple Podcast support
-      episodes            = episodes
+      mainUrl                = "https://scratch.audiofluidity.com/",
+      title                  = "Scratchfluidity",  
+      description            = """|<p>This is a test podcast, used to help develop <i>audiofluidity</i>.</p>
+                                  |
+                                  |<p>I hope you like it.""".stripMargin, 
+      guidPrefix             = "com.mchange.scratchfluidity-",
+      shortOpaqueName        = "scratchfluidity",  
+      mainCoverImageFileName = "scratchfluidity-on-chalkwave.jpg", 
+      editorEmail            = "swaldman@mchange.com", 
+      defaultAuthorEmail     = "swaldman@mchange.com",
+      itunesCategories       = immutable.Seq( ItunesCategory.Society_Culture_Personal_Journals ),
+      mbAdmin                = Some(Admin(name="Steve Waldman", email="swaldman@mchange.com")),
+      mbCopyrightHolder      = Some("Machinery For Change, LLC"),
+      mbLanguage             = Some(LanguageCode.EnglishUnitedStates),
+      mbPublisher            = Some("Machinery For Change, LLC"),
+      episodes               = episodes
     )
 
   val deployer = new Deployer.Exec(preparsedCommand = immutable.Seq("rsync", "-av", ".", "swaldman@tickle.mchange.com:/home/web/public/audiofluidity-scratch"))
