@@ -52,7 +52,9 @@ ul.episodelist {
     text-align: left;
 }
 
-span.episodelistaudiolink {
+
+
+span.episodelistduration, span.episodelistaudiolink {
     display: block;
     float: right;
     padding-left: 1em;
@@ -64,9 +66,12 @@ span.episodelistnumber {
 }
 
 span.episodelistpubdate {
+    /*
     font-style: oblique;
-    color: gray;
     font-size: smaller;
+    color: red;
+    float: right;
+    */
     display: none;
 }
 

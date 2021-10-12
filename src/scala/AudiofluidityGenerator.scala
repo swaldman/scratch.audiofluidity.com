@@ -59,9 +59,8 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
                                   |
                                   |<p>Ok, it's kind of a podcast. It's a test podcast, used to help develop <i>audiofluidity</i>.</p>
                                   |
-                                  |<p>I hope you like it.</p>
-                                  |
-                                  |<p style="font-size: smaller;"><i>Background courtesy of <a href="https://www.toptal.com/designers/subtlepatterns/double-bubble-dark-pattern/">Toptal</a>.</i></p>""".stripMargin, 
+                                  |<p>I hope you like it.</p>""".stripMargin,
+      extraDescription       = """<p style="font-size: smaller;"><i>Background courtesy of <a href="https://www.toptal.com/designers/subtlepatterns/double-bubble-dark-pattern/">Toptal</a>.</i></p>""", 
       guidPrefix             = "com.mchange.scratchfluidity-",
       shortOpaqueName        = "scratchfluidity",  
       mainCoverImageFileName = "scratchfluidity-on-chalkwave.jpg", 
