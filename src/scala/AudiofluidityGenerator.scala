@@ -22,7 +22,34 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
       mbSubtitle           = Some("It's pretty underwhelming!")  
     )
 
-  val episodes : List[Episode] = episode1 :: Nil
+  val episode2 =
+    Episode(
+      uid                  = "2",
+      title                = "I dream of axolotls",
+      description          = """|<p>
+                                |  I wanted to make an "episode", but the kid was very loudly playing Minecraft.
+                                |  So, I recorded the kid, and cut clips of his gaming exclamations into this (fake) interview.
+                                |  (The kid was just gaming; the questions I made up after the fact had nothing to do with what he was responding to.)
+                                |</p>
+                                |
+                                |<p>
+                                |  Of course there's weird MIDI music.
+                                |</p>
+                                |
+                                |<p>
+                                |  Anyway, it seems kind of fun!
+                                |</p>
+                                |
+                                |<p><b>Credits:</b> <a href="https://www.pexels.com/photo/white-fish-under-water-2168831/">Episode cover photo</a> by Artem Lysenko from Pexels
+                                |
+                                |""".stripMargin,
+      sourceAudioFileName  = "Leon-Playing-Minecraft-As-Interview.mp3",
+      publicationDate      = "2021-10-11",
+      publicationTime      = "17:00",
+      mbCoverImageFileName = Some("pexels-artem-lysenko-2168831-small.jpg")
+    )
+
+  val episodes : List[Episode] = episode1 :: episode2 :: Nil
 
   val podcast : Podcast =
     Podcast(

@@ -5,6 +5,10 @@ body {
   color: #ccccff;
 }
 
+b {
+  color: white;
+}
+
 body.podcast {
   text-align: center;
 }
@@ -25,13 +29,6 @@ hr.episode {
   border: 1px solid #626262;
 }
 
-span.pubdate {
-    font-style: oblique;
-    color: gray;
-    font-size: smaller;
-    display: none;
-}
-
 h1.maintitle.podcast {
     display: none;
 }
@@ -50,5 +47,34 @@ a, a:visited {
 }
 
 ul.episodelist {
+    display: inline-block;
     list-style-type: none;
+    text-align: left;
+}
+
+span.episodelistaudiolink {
+    display: block;
+    float: right;
+    padding-left: 1em;
+}
+
+span.episodelistnumber {
+    font-weight: bold;
+    color: white;
+}
+
+span.episodelistpubdate {
+    font-style: oblique;
+    color: gray;
+    font-size: smaller;
+    display: none;
+}
+
+span.audiolinklabel {
+    color: white;
+    font-weight: bold;
+}
+
+p.publishedwhen {
+    font-style: oblique;
 }
