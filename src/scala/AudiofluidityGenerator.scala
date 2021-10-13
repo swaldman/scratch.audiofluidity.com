@@ -49,7 +49,26 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
       mbCoverImageFileName = Some("pexels-artem-lysenko-2168831-small.jpg")
     )
 
-  val episodes : List[Episode] = episode1 :: episode2 :: Nil
+  val episode3 = Episode(
+    uid                    = "3",
+    title                  = "Leon opens Pokemon, 2012-10-12",
+    description            = s"""|<p>
+                                 |  <b>Leon's passion these days</b> is Pokemon, and for a while we've been practicing
+                                 |  our audio production skills by recording little 'podcasts' on the special days
+                                 |  when he gets to open a new pack. Now that we have this, um, podcast, we figured
+                                 |  we'd publish this little family event. Enjoy!
+                                 |</p>
+                                 |
+                                 |<p>As always, I had fun with the music. It's become my little vice.</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "Leon-Opening-Pokemon-2021-10-12.mp3",
+    publicationDate        = "2012-10-12",
+    publicationTime        = "19:45",
+    mbAuthorEmail          = Some("swaldman@mchange.com") 
+  )
+
+
+  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: Nil
 
   val podcast : Podcast =
     Podcast(
