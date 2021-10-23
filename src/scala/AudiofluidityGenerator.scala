@@ -62,13 +62,29 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
                                  |<p>As always, I had fun with the music. It's become my little vice.</p>
                                  |""".stripMargin,
     sourceAudioFileName    = "Leon-Opening-Pokemon-2021-10-12.mp3",
-    publicationDate        = "2012-10-12",
+    publicationDate        = "2021-10-12",
     publicationTime        = "19:45",
     mbAuthorEmail          = Some("swaldman@mchange.com") 
   )
 
+  val episode4 = Episode(
+    uid                    = "4",
+    title                  = "Some more MIDI music",
+    description            = s"""|<p>
+                                 |  <b>I seem to think</b> it's the coolest thing that, with my very limited musical
+                                 |  skills, I can use MIDI and synthesizer plugins to make what sounds like "real music".
+                                 |  This is a "composition" derived from mixing a transforming a single arpegio, and adding
+                                 |  in just a bit of pseudocello as harmony. It ends rather abruptly, though.
+                                 |</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "piano-harp-cello_2.mp3",
+    publicationDate        = "2021-10-23",
+    publicationTime        = "03:05",
+    mbAuthorEmail          = Some("swaldman@mchange.com") 
+  )
 
-  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: Nil
+
+  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: episode4 :: Nil
 
   val podcast : Podcast =
     Podcast(
