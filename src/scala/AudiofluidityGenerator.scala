@@ -87,7 +87,7 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
 
    val episode5 = Episode(
     uid                    = "5",
-    title                  = "Leon Opens Pokemon From Danielle",
+    title                  = "Leon opens Pokemon from Danielle",
     description            = s"""|<p><b>Leon got a suprise</b> in the mail.</p>
                                  |
                                  |<p>A tin containing several new packs of Pokemon cards from Danielle Feigerson!</p>
