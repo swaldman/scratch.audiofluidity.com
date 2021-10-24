@@ -64,7 +64,8 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
     sourceAudioFileName    = "Leon-Opening-Pokemon-2021-10-12.mp3",
     publicationDate        = "2021-10-12",
     publicationTime        = "19:45",
-    mbAuthorEmail          = Some("swaldman@mchange.com") 
+    mbAuthorEmail          = Some("swaldman@mchange.com"),
+    keywords               = immutable.Seq("Pokemon")
   )
 
   val episode4 = Episode(
@@ -84,7 +85,24 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
   )
 
 
-  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: episode4 :: Nil
+   val episode5 = Episode(
+    uid                    = "5",
+    title                  = "Leon Opens Pokemon From Danielle",
+    description            = s"""|<p><b>Leon got a suprise</b> in the mail.</p>
+                                 |
+                                 |<p>A tin containings several new packs of Pokemon cards from Danielle Feigerson!</p>
+                                 |
+                                 |<p>Thank you Danielle!</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "Leon-Danielle-Pokemon-2021-10-23.mp3",
+    publicationDate        = "2021-10-23",
+    publicationTime        = "19:45",
+    mbAuthorEmail          = Some("swaldman@mchange.com"),
+    keywords               = immutable.Seq("Pokemon")
+  )
+ 
+
+  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: episode4 :: episode5 :: Nil
 
   val podcast : Podcast =
     Podcast(
