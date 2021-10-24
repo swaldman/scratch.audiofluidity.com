@@ -90,7 +90,7 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
     title                  = "Leon Opens Pokemon From Danielle",
     description            = s"""|<p><b>Leon got a suprise</b> in the mail.</p>
                                  |
-                                 |<p>A tin containings several new packs of Pokemon cards from Danielle Feigerson!</p>
+                                 |<p>A tin containing several new packs of Pokemon cards from Danielle Feigerson!</p>
                                  |
                                  |<p>Thank you Danielle!</p>
                                  |""".stripMargin,
