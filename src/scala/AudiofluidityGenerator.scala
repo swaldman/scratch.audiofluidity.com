@@ -100,9 +100,65 @@ class AudiofluidityGenerator extends PodcastGenerator.Base:
     mbAuthorEmail          = Some("swaldman@mchange.com"),
     keywords               = immutable.Seq("Pokemon")
   )
- 
 
-  val episodes : List[Episode] = episode1 :: episode2 :: episode3 :: episode4 :: episode5 :: Nil
+   val episode6 = Episode(
+    uid                    = "6",
+    title                  = "Leon opens Pokemon cards from Grandma",
+    description            = s"""|<p><b>Leon got <i>another</i> suprise</b> in the mail.</p>
+                                 |
+                                 |<p>This time it was a box of "rare" Pokemon from Grandma!</p>
+                                 |
+                                 |<p>Thank you Grandma!</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "Leon-Opens-Pokemon-From-Grandma-2021-10-26.mp3",
+    publicationDate        = "2021-10-27",
+    publicationTime        = "00:15",
+    mbAuthorEmail          = Some("swaldman@mchange.com"),
+    keywords               = immutable.Seq("Pokemon")
+  )
+
+   val episode7 = Episode(
+    uid                    = "7",
+    title                  = "Gigantic Wings -- Leon and Aksel open Pokemon together",
+    description            = s"""|<p>Leon opens Pokemon cards <b>along with friend and special guest Aksel!</b></p>
+                                 |
+                                 |<p>
+                                 |  <i>I only have two "decent" mics, but we had a conversation of three in this episode.
+                                 |  I recorded my voice on the mic built into a dirt-cheap pair of headphones, and did
+                                 |  my best to sync it into the mix. It was terrible. Besides its low, buzzy, noisy, 
+                                 |  quality, it caught everything, and this "bleed" sounded awful combined with the mix.
+                                 |  I spent an inordinate time trying to "fix" all this, rigging a walkie-talkie like scheme
+                                 |  where signal from the "good" mics would cause output from the bad mic to be suppressed
+                                 |  and vice-versa. Along with a bunch of "plug ins" to suppress some of the noise and flesh out
+                                 |  some of the tinniness of the bad mic itself, maybe it all kind of works. But if the audio
+                                 |  sounds a bit processed or weird, you know why!</i>
+                                 |</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "Leon-and-Aksel-2021-11-09-redux.mp3",
+    publicationDate        = "2021-11-13",
+    publicationTime        = "23:00",
+    mbAuthorEmail          = Some("swaldman@mchange.com"),
+    keywords               = immutable.Seq("Pokemon")
+  )
+
+  val episode8 = Episode(
+    uid                    = "8",
+    title                  = "Leon finds Gengar V",
+    description            = s"""|<p><b>Leon opens</b> a new pack of Pokemon cards, and finds a good one.</p>
+                                 |
+                                 |<p>Your humble producer plays with wacky vocal effects and beat-box plugins.</p>
+                                 |
+                                 |<p>Secrets are revealed.</p>
+                                 |""".stripMargin,
+    sourceAudioFileName    = "Leon-More-Pokemon-2021-11-19.mp3",
+    publicationDate        = "2021-11-19",
+    publicationTime        = "22:30",
+    mbAuthorEmail          = Some("swaldman@mchange.com"),
+    keywords               = immutable.Seq("Pokemon")
+  )
+
+  val episodes : List[Episode] = 
+    episode1 :: episode2 :: episode3 :: episode4 :: episode5 :: episode6 :: episode7 :: episode8 :: Nil
 
   val podcast : Podcast =
     Podcast(
